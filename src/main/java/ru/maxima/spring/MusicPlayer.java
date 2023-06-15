@@ -25,6 +25,8 @@ public class MusicPlayer {
     private double startRadio;
     private double endRadio;
 
+    private List<Music> musicList;
+
 
 //    public MusicPlayer(Radio radio) {
 //        this.radio = radio;
@@ -47,6 +49,13 @@ public class MusicPlayer {
         this.endRadio = endRadio;
     }
 
+    public List<Music> getMusicList() {
+        return musicList;
+    }
+
+    public void setMusicList(List<Music> musicList) {
+        this.musicList = musicList;
+    }
 
     public Radio getRadio() {
         return radio;
@@ -68,6 +77,10 @@ public class MusicPlayer {
     public void playMusic() {
        // radio = new RetroRadio();
 //        System.out.println("On air \n" + radio.getSong());
+
+        for (Music music : musicList) {
+            System.out.println(music.getName());
+        }
 
     }
 }
