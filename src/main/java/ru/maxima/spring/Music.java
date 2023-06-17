@@ -1,5 +1,8 @@
 package ru.maxima.spring;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Music {
     private String name;
 

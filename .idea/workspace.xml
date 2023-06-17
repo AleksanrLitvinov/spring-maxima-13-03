@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc7a4ab4-7154-4cf6-aef8-059db76f5385" name="Changes" comment="Spring. Beans">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/Music.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/MusicPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/Radio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/RetroRadio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/RetroRadio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/RockRadio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/RockRadio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +99,7 @@
       <workItem from="1686498472972" duration="212000" />
       <workItem from="1686743366006" duration="1366000" />
       <workItem from="1686744758450" duration="13463000" />
-      <workItem from="1686815719246" duration="1800000" />
+      <workItem from="1686815719246" duration="7621000" />
     </task>
     <task id="LOCAL-00001" summary="Spring. Beans">
       <created>1686815949138</created>
@@ -107,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686816123645</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Spring. Beans">
+      <created>1686817619914</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686817619915</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

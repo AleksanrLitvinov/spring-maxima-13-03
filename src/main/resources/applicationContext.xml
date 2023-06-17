@@ -5,36 +5,42 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-<context:property-placeholder location="application.properties"/>
-    <bean    id="musicPlayer"
-             class="ru.maxima.spring.MusicPlayer"
-             scope="prototype">
-<!--                <constructor-arg ref="retroRadio"/>-->
-        <property name="radio" ref="retroRadio"/>
-        <property name="nameOfRadioFrequency" value="AM/FM"/>
-        <property name="startRadio" value="87.5"/>
-        <property name="endRadio" value="108.0"/>
-        <property name="musicList">
-            <list>
-                <ref bean="music1"/>
-                <ref bean="music2"/>
-                <ref bean="music3"/>
-            </list>
-        </property>
 
-    </bean>
-    <bean    id="retroRadio"
-            class="ru.maxima.spring.RetroRadio">
-<!--        <constructor-arg value="nameFromConstructor"/>-->
-    </bean>
-    <bean id="music1" class="ru.maxima.spring.Music">
-        <property name="name" value="P.Lion-Dream"/>
-    </bean>
-    <bean id="music2" class="ru.maxima.spring.Music">
-        <property name="name" value="Mike Rogers-Just A Story"/>
-    </bean>
-    <bean id="music3" class="ru.maxima.spring.Music">
-        <property name="name" value="Eddy Huntington-U.S.S.R."/>
-    </bean>
+<!--    <context:component-scan base-package="ru.maxima.spring"/>-->
+<!--    <context:property-placeholder location="classpath:application.properties"/>-->
+<!--    <bean    id="musicPlayer"-->
+<!--             class="ru.maxima.spring.MusicPlayer"-->
+<!--              init-method="myInitMethod"-->
+<!--               destroy-method="myDestroyMethod">-->
+<!--&lt;!&ndash;             scope="prototype">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <constructor-arg ref="retroRadio"/>&ndash;&gt;-->
+
+<!--        <property name="radio" ref="retroRadio"/>-->
+<!--        <property name="nameOfRadioFrequency" value="AM/FM"/>-->
+<!--        <property name="startRadio" value="87.5"/>-->
+<!--        <property name="endRadio" value="108.0"/>-->
+<!--        <property name="musicList">-->
+<!--            <list>-->
+<!--                <ref bean="music1"/>-->
+<!--                <ref bean="music2"/>-->
+<!--                <ref bean="music3"/>-->
+<!--            </list>-->
+<!--        </property>-->
+
+<!--    </bean>-->
+<!--    <bean    id="retroRadio"-->
+<!--            class="ru.maxima.spring.RetroRadio">-->
+<!--&lt;!&ndash;        <constructor-arg value="nameFromConstructor"/>&ndash;&gt;-->
+<!--    </bean>-->
+<!--    <bean id="music1" class="ru.maxima.spring.Music">-->
+<!--        <property name="name" value="P.Lion-Dream"/>-->
+<!--    </bean>-->
+<!--    <bean id="music2" class="ru.maxima.spring.Music">-->
+<!--        <property name="name" value="Mike Rogers-Just A Story"/>-->
+<!--    </bean>-->
+<!--    <bean id="music3" class="ru.maxima.spring.Music">-->
+<!--        <property name="name" value="Eddy Huntington-U.S.S.R."/>-->
+<!--    </bean>-->
 
 </beans>

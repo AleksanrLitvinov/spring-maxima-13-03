@@ -11,29 +11,44 @@ package ru.maxima.spring;
 //
 //}
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.List;
 
-public class MusicPlayer {
+@Component
+//@Scope("prototype")
+public class MusicPlayer { //musicPlayer
 //    private Radio rockRadio;
 //
 //    public MusicPlayer(Radio rockRadio) {
 //        this.rockRadio = rockRadio;
 //    }
 
+
     private Radio radio;
+    private Radio radio2;
+    @Value("${nameOfRadioFrequency}")
     private String nameOfRadioFrequency;
+    @Value("${startRadio}")
     private double startRadio;
+    @Value("${endRadio}")
     private double endRadio;
 
+
     private List<Music> musicList;
-
-
-//    public MusicPlayer(Radio radio) {
+//    @Autowired
+//    public MusicPlayer(@Qualifier("retroRadio") Radio radio, @Qualifier("rockRadio") Radio radio2) {
 //        this.radio = radio;
+//        this.radio2 = radio2;
 //    }
 
-
-    public void setRadio(Radio radio) {
+    @Autowired
+    public void setRadio(@Qualifier("retroRadio") Radio radio) {
         this.radio = radio;
     }
 
@@ -52,7 +67,7 @@ public class MusicPlayer {
     public List<Music> getMusicList() {
         return musicList;
     }
-
+    @Autowired
     public void setMusicList(List<Music> musicList) {
         this.musicList = musicList;
     }
@@ -73,14 +88,23 @@ public class MusicPlayer {
         return endRadio;
     }
 
+    @PostConstruct
+    public void myInitMethod() {
+        System.out.println("Doing my initialisation");
+    }
+
 
     public void playMusic() {
-       // radio = new RetroRadio();
-//        System.out.println("On air \n" + radio.getSong());
+        radio = new RetroRadio();
+        System.out.println("On air \n" + radio.getSong());
 
-        for (Music music : musicList) {
-            System.out.println(music.getName());
-        }
+//        for (Music music : musicList) {
+//            System.out.println(music.getName());
+//        }
 
+    }
+    @PreDestroy
+    public void myDestroyMethod() {
+        System.out.println("Doing my destruct");
     }
 }
