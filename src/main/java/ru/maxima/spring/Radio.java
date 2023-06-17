@@ -5,4 +5,6 @@ import org.springframework.stereotype.Component;
 @Component
 public interface Radio {
     String getSong();
+
+    public Music playMusic();
 }

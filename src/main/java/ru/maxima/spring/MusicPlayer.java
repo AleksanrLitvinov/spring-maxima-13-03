@@ -38,9 +38,14 @@ public class MusicPlayer { //musicPlayer
     private double startRadio;
     @Value("${endRadio}")
     private double endRadio;
+    private List<Radio> radioList;
 
+    public MusicPlayer(List<Radio> radioList) {
+        this.radioList = radioList;
+    }
 
-    private List<Music> musicList;
+    //
+//    private List<Music> musicList;
 //    @Autowired
 //    public MusicPlayer(@Qualifier("retroRadio") Radio radio, @Qualifier("rockRadio") Radio radio2) {
 //        this.radio = radio;
@@ -64,13 +69,13 @@ public class MusicPlayer { //musicPlayer
         this.endRadio = endRadio;
     }
 
-    public List<Music> getMusicList() {
-        return musicList;
-    }
-    @Autowired
-    public void setMusicList(List<Music> musicList) {
-        this.musicList = musicList;
-    }
+//    public List<Music> getMusicList() {
+//        return musicList;
+//    }
+//    @Autowired
+//    public void setMusicList(List<Music> musicList) {
+//        this.musicList = musicList;
+//    }
 
     public Radio getRadio() {
         return radio;
@@ -88,23 +93,29 @@ public class MusicPlayer { //musicPlayer
         return endRadio;
     }
 
-    @PostConstruct
-    public void myInitMethod() {
-        System.out.println("Doing my initialisation");
-    }
+//    @PostConstruct
+//    public void myInitMethod() {
+//        System.out.println("Doing my initialisation");
+//    }
 
 
     public void playMusic() {
-        radio = new RetroRadio();
-        System.out.println("On air \n" + radio.getSong());
+//        radio = new RetroRadio();
+//        System.out.println("On air \n" + radio.getSong());
 
 //        for (Music music : musicList) {
 //            System.out.println(music.getName());
 //        }
 
+        for (Radio radio : radioList) {
+
+            System.out.println(radio.playMusic().getName());
+        }
+
+
     }
-    @PreDestroy
-    public void myDestroyMethod() {
-        System.out.println("Doing my destruct");
-    }
+//    @PreDestroy
+//    public void myDestroyMethod() {
+//        System.out.println("Doing my destruct");
+//    }
 }

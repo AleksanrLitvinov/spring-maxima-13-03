@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7a4ab4-7154-4cf6-aef8-059db76f5385" name="Changes" comment="Spring. Beans">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/SpringConfig.java" afterDir="false" />
+    <list default="true" id="fc7a4ab4-7154-4cf6-aef8-059db76f5385" name="Changes" comment="Spring. Конфигурация на Java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/Music.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/MusicPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/Radio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/RetroRadio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/RetroRadio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/RockRadio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/RockRadio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/maxima/spring/SpringConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +97,7 @@
       <workItem from="1686743366006" duration="1366000" />
       <workItem from="1686744758450" duration="13463000" />
       <workItem from="1686815719246" duration="7621000" />
+      <workItem from="1686986630142" duration="6165000" />
     </task>
     <task id="LOCAL-00001" summary="Spring. Beans">
       <created>1686815949138</created>
@@ -122,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686817619915</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Spring. Конфигурация на Java">
+      <created>1686986792823</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686986792823</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +135,31 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Spring. Beans" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring. Beans" />
+    <MESSAGE value="Spring. Конфигурация на Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring. Конфигурация на Java" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/maxima/spring/SpringConfig.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/maxima/spring/RetroRadio.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/maxima/spring/SpringConfig.java</url>
+          <line>17</line>
+          <properties class="ru.maxima.spring.SpringConfig" method="getMusic1">
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -26,11 +26,10 @@ public class Main {
                 SpringConfig.class);
 
         MusicPlayer musicPlayer1 = context.getBean("musicPlayer", MusicPlayer.class);
-        MusicPlayer musicPlayer2 = context.getBean("musicPlayer", MusicPlayer.class);
+
 
         musicPlayer1.playMusic();
-        musicPlayer2.playMusic();
-        System.out.println(musicPlayer1 == musicPlayer2);
+
         context.close();
     }
 }
