@@ -9,7 +9,7 @@ import java.util.Random;
 @Component
 public class RockRadio implements Radio {
 
-    @Autowired
+
    private List<Music> music;
 
     public RockRadio(List<Music> music) {

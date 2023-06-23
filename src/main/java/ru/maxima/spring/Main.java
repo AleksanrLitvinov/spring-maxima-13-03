@@ -25,7 +25,7 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(
                 SpringConfig.class);
 
-        MusicPlayer musicPlayer1 = context.getBean("musicPlayer", MusicPlayer.class);
+        MusicPlayer musicPlayer1 = context.getBean("getMusicPlayer", MusicPlayer.class);
 
 
         musicPlayer1.playMusic();

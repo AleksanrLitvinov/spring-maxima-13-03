@@ -10,7 +10,7 @@ import java.util.Random;
 @Component
 public class RetroRadio implements Radio{
 
-    @Autowired
+
    private List<Music> music;
 
     public RetroRadio(List<Music> music) {

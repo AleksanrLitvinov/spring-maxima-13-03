@@ -39,7 +39,7 @@ public class SpringConfig {
     @Bean
     public RetroRadio getRetroRadio() {
         List<Music> musicList = new ArrayList<>();
-        musicList.add(getMusic1());
+        //  musicList.add(getMusic1());
         musicList.add(getMusic2());
         musicList.add(getMusic3());
         return new RetroRadio(musicList);
