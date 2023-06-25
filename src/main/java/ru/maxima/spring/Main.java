@@ -29,7 +29,6 @@ public class Main {
 
 
         musicPlayer1.playMusic();
-
         context.close();
     }
 }
